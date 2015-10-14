@@ -26,12 +26,7 @@ class ViewController: UIViewController {
             
         }
         
-        
-        
         alienImage.image = UIImage(named: "frame\(counter).png")
-            
-
-        
         
     }
     
