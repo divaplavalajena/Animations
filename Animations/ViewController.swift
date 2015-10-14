@@ -12,9 +12,25 @@ class ViewController: UIViewController {
 
     @IBOutlet var alienImage: UIImageView!
     
+    var counter = 1
+    
     @IBAction func updateImage(sender: AnyObject) {
         
-        alienImage.image = UIImage(named: "frame2.png")
+        if counter == 5 {
+            
+            counter = 1
+            
+        }else {
+            
+            counter++
+            
+        }
+        
+        
+        
+        alienImage.image = UIImage(named: "frame\(counter).png")
+            
+
         
         
     }
